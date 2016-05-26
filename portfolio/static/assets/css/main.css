@@ -48,6 +48,10 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	a {
+		text-decoration: none;
+		color: black;
+	}
 /* Box Model */
 
 	*, *:before, *:after {
@@ -747,7 +751,7 @@
 /* Basic */
 
 	body {
-		background-image: url("images/overlay.png"), url("images/bg.jpg");
+		background-image: url("images/overlay.png"), url("images/orange.jpg");
 		background-repeat: repeat, no-repeat;
 		background-size: auto, 100% 100%;
 		font-family: 'Source Sans Pro', sans-serif;
@@ -812,6 +816,12 @@
 
 	p, ul, ol, dl, table, blockquote, form {
 		margin-bottom: 2em;
+	}
+
+	.projects p h3 h5{
+		float: right;
+		margin-left: 5%
+		text-align: center;
 	}
 
 /* Table */
@@ -915,13 +925,16 @@
 	}
 
 		.image img {
-			display: block;
+			/*display: block;*/
 			width: 100%;
+			float: left;
+			margin-right: 5%
 		}
 
 		.image.fit {
 			display: block;
-			width: 100%;
+			width: 45%;
+			margin: 5% 5% 10px 0%;
 		}
 
 		.image.featured {
@@ -1039,6 +1052,7 @@
 	.icon {
 		position: relative;
 		text-decoration: none;
+		color: #FF5600;
 	}
 
 		.icon:before {
@@ -1073,7 +1087,7 @@
 
 	#main {
 		position: relative;
-		overflow: hidden;
+		overflow: auto;
 	}
 
 	.panel {
@@ -1339,6 +1353,7 @@
 			#me {
 				padding: 0;
 				height: 20em;
+				overflow: hidden;
 			}
 
 				#me .pic {
@@ -1582,3 +1597,6 @@
 					}
 
 	}
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/

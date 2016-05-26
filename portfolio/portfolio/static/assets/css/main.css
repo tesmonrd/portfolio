@@ -928,6 +928,8 @@
 			/*display: block;*/
 			width: 100%;
 			float: left;
+			width:360px;
+			height: 270px;
 			margin-right: 5%
 		}
 
@@ -1087,7 +1089,7 @@
 
 	#main {
 		position: relative;
-		overflow: hidden;
+		overflow: auto;
 	}
 
 	.panel {
@@ -1353,6 +1355,7 @@
 			#me {
 				padding: 0;
 				height: 20em;
+				overflow: hidden;
 			}
 
 				#me .pic {

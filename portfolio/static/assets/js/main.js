@@ -241,3 +241,86 @@
 	});
 
 })(jQuery);
+
+// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$("#clickme").click(function(){
+    $(".more_info").show();
+    $("#clickme").hide();
+});
+$("#show_less").click(function(){
+	$(".more_info").hide();
+	$("#clickme").show();
+	$("#show_less").hide();
+});
+
+$("#clickme2").click(function(){
+    $(".more_info2").show();
+    $("#clickme2").hide();
+});
+$("#show_less2").click(function(){
+	$(".more_info2").hide();
+	$("#clickme2").show();
+	$("#show_less2").hide();
+});
+
+$("#clickme3").click(function(){
+    $(".more_info3").show();
+    $("#clickme3").hide();
+});
+$("#show_less3").click(function(){
+	$(".more_info3").hide();
+	$("#clickme3").show();
+	$("#show_less3").hide();
+});
+
+$("#clickme4").click(function(){
+    $(".more_info4").show();
+    $("#clickme4").hide();
+});
+$("#show_less4").click(function(){
+	$(".more_info4").hide();
+	$("#clickme4").show();
+	$("#show_less4").hide();
+});
+
+(function($){
+    $.fn.extend({ 
+        rotaterator: function(options) {
+ 
+            var defaults = {
+                fadeSpeed: 500,
+                pauseSpeed: 500,
+				child:null
+            };
+             
+            var options = $.extend(defaults, options);
+         
+            return this.each(function() {
+                  var o =options;
+                  var obj = $(this);                
+                  var items = $(obj.children(), obj);
+				  items.each(function() {$(this).hide();})
+				  if(!o.child){var next = $(obj).children(':first');
+				  }else{var next = o.child;
+				  }
+				  $(next).fadeIn(o.fadeSpeed, function() {
+						$(next).delay(o.pauseSpeed).fadeOut(o.fadeSpeed, function() {
+							var next = $(this).next();
+							if (next.length == 0){
+									next = $(obj).children(':first');
+							}
+							$(obj).rotaterator({child : next, fadeSpeed : o.fadeSpeed, pauseSpeed : o.pauseSpeed});
+						})
+					});
+            });
+        }
+    });
+})(jQuery);
+
+ $(document).ready(function() {
+        $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:600});
+        $('.more_info').hide();
+        $('.more_info2').hide();
+        $('.more_info3').hide();
+        $('.more_info4').hide();
+ });
