@@ -48,6 +48,10 @@
 		-webkit-text-size-adjust: none;
 	}
 
+	a {
+		text-decoration: none;
+		color: black;
+	}
 /* Box Model */
 
 	*, *:before, *:after {
@@ -814,6 +818,12 @@
 		margin-bottom: 2em;
 	}
 
+	.projects p h3 h5{
+		float: right;
+		margin-left: 5%
+		text-align: center;
+	}
+
 /* Table */
 
 	table {
@@ -915,13 +925,16 @@
 	}
 
 		.image img {
-			display: block;
+			/*display: block;*/
 			width: 100%;
+			float: left;
+			margin-right: 5%
 		}
 
 		.image.fit {
 			display: block;
-			width: 100%;
+			width: 45%;
+			margin: 5% 5% 10px 0%;
 		}
 
 		.image.featured {

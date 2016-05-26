@@ -243,6 +243,45 @@
 })(jQuery);
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+$("#clickme").click(function(){
+    $(".more_info").show();
+    $("#clickme").hide();
+});
+$("#show_less").click(function(){
+	$(".more_info").hide();
+	$("#clickme").show();
+	$("#show_less").hide();
+});
+
+$("#clickme2").click(function(){
+    $(".more_info2").show();
+    $("#clickme2").hide();
+});
+$("#show_less2").click(function(){
+	$(".more_info2").hide();
+	$("#clickme2").show();
+	$("#show_less2").hide();
+});
+
+$("#clickme3").click(function(){
+    $(".more_info3").show();
+    $("#clickme3").hide();
+});
+$("#show_less3").click(function(){
+	$(".more_info3").hide();
+	$("#clickme3").show();
+	$("#show_less3").hide();
+});
+
+$("#clickme4").click(function(){
+    $(".more_info4").show();
+    $("#clickme4").hide();
+});
+$("#show_less4").click(function(){
+	$(".more_info4").hide();
+	$("#clickme4").show();
+	$("#show_less4").hide();
+});
 
 (function($){
     $.fn.extend({ 
@@ -280,4 +319,8 @@
 
  $(document).ready(function() {
         $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:600});
+        $('.more_info').hide();
+        $('.more_info2').hide();
+        $('.more_info3').hide();
+        $('.more_info4').hide();
  });
