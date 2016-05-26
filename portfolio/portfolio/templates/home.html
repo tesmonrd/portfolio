@@ -51,7 +51,7 @@
                                     </span> </p>
                                 </header>
                                 <a href="#bio" class="jumplink pic">
-                                    <span class="arrow icon fa-chevron-right"><span>Learn more about me</span></span>
+                                    <span class="arrow icon fa-hand-o-right"><span>Learn more about me</span></span>
                                     <img src="/static/images/profile.jpg" alt="" />
                                 </a>
                             </article>
@@ -60,14 +60,14 @@
                         <article id="bio" class="panel">
                                 <header>
                                     <h2>About Me</h2>
-                                </header>
                                 <p>
                                     Phasellus enim sapien, blandit ullamcorper elementum eu, condimentum eu elit.
                                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia
                                     luctus elit eget interdum.
                                 </p>
+                                </header>
                                 <a href="#work" class="jumplink pic">
-                                    <span class="arrow icon fa-chevron-right"><span>See my work</span></span></a>
+                                    <span class="arrow icon fa-chevron-right"><span> See my work</span></span></a>
                             </article>
 
                         <!-- Work -->
@@ -81,35 +81,63 @@
                                     luctus elit eget interdum.
                                 </p>
                                 <section>
-                                    <div class="row">
-                                        <div class="4u 12u$(mobile)">
+                                    <!-- <div class="row"> -->
+                                        <div class="projects">
                                             <a href="#" class="image fit"><img src="/static/images/pic01.jpg" alt=""></a>
                                             <h3>RideShare</h3>
                                             <p>May 2016<br/>
-                                            Blagh blagh blagh</p>
-                                        </div>
-                                        <div class="4u 12u$(mobile)">
+                                            A web app that helps connect other people driving to a similar location given a radius from your start point; as a user you can set routes, ask for other routes, and view other drivers' profiles.<br/>
+                                            <button id="clickme">Show More</button>
+                                            <span class="more_info"><br/><br/><i><b>Review</b></i>: "I worked on and completed the back-end for this project. I established custom token authentication and security, and restful API endpoints for users, profiles, routes, and route queries. The project required clear, constant communication and cooperation with the JavaScript front-end team during the four-day sprint, from start to finish."<br/>
+                                            <i><b>Built on:</b></i> Django, Python, Django RESTFramework, PostgreSQL, and PostGIS database. <br/>
+                                            <i><b>Deployment:</b></i> AWS EC2, AWS RDS for database management, and automated using Ansible.<br/>
+                                            <a href="https://github.com/RideQuest/rideshare-backend" target="_blank"><b>Source Code <span class="icon fa-external-link"></span></b></a><br/>
+                                            <button id="show_less">Show Less</button></span>
+                                            </p>
+                                        </div><br/>
+                                        <div class="projects">
                                             <a href="cameraobscura.rtesmond.com/" class="image fit"><img src="/static/images/pic02.jpg" alt=""></a>
                                             <h3>Camera Obscura</h3>
                                             <p>April 2016<br/>
-                                            Blagh blagh blagh</p>
-                                        </div>
-                                        <div class="4u$ 12u$(mobile)">
+                                            A social network web app that creates and stores images and photo albums on the Cloud with a RESTful API endpoint for retrieving photo and album data.<br/>
+                                            <button id="clickme2">Show More</button>
+                                            <span class="more_info2"><br/><br/><i><b>Review</b></i>: "Solo project that worked my full-stack development skills; from database management, security and authentication, and file storage to UX/UI, JavaScript/jQuery commands, and writing content."<br/>
+                                            <i><b>Built on:</b></i> Django, Python, Django RESTFramework, JavaScript, and PostgreSQL. <br/>
+                                            <i><b>Deployment:</b></i> AWS EC2, AWS RDS for database management, and automated using Ansible.<br/>
+                                            <a href="https://github.com/RideQuest/rideshare-backend" target="_blank"><b>Source Code</b></a><br/>
+                                            <button id="show_less2">Show Less</button></span>
+                                            </p>
+                                        </div><br/>
+                                        <div class="projects">
                                             <a href="#" class="image fit"><img src="/static/images/pic03.jpg" alt=""></a>
                                             <h3>Stock Talk</h3>
                                             <p>March 2016<br/>
-                                            Blagh blagh blagh</p>
-                                        </div>
-                                        <div class="4u 12u$(mobile)">
+                                            Stock Talk presents users with information on the biggest movers and the public reaction surrounding the rising or falling trends. Stock details include live graphs, stocktwit, twitter, and reddit feeds about the company stock.<br/>
+                                            <button id="clickme3">Show More</button>
+                                            <span class="more_info3"><br/><br/><i><b>Review</b></i>: "I worked primarily with the data mining and accessing the social media APIs; primarily Twitter and Stocktwits. I also took charge of the UX/UI and test coverage for the project."<br/>
+                                            <i><b>Built on:</b></i> Django, Python, JavaScript, jQuery, Bootstrap, and postgreSQL. <br/>
+                                            <i><b>Deployment:</b></i> Heroku.<br/>
+                                            <a href="https://github.com/RideQuest/rideshare-backend" target="_blank"><b>Source Code <span class="icon fa-external-link"></span></b></a><br/>
+                                            <button id="show_less3">Show Less</button></span>
+                                            </p>
+                                        </div><br/>
+                                        <div class="projects">
                                             <a href="#" class="image fit"><img src="/static/images/pic04.jpg" alt=""></a>
                                             <h3>TrailMix</h3>
                                             <p>December 2015<br/>
-                                            Blagh blagh blagh</p>
+                                            Chrome-Only Application. Trail Mix aims to make your life a little easier and get you outdoors quicker by sorting through libraries of hikes and randomly picking your ideal trail based on your input. Happy Hiking!<br/>
+                                            <button id="clickme4">Show More</button>
+                                            <span class="more_info4"><br/><br/><i><b>Review</b></i>: "As project leader, I planned, organized, and executed the project with my team over a four-day sprint."<br/>
+                                            <i><b>Built on:</b></i> JavaScript, jQuery, Bootstrap, and MySQL. <br/>
+                                            <i><b>Deployment:</b></i> Heroku.<br/>
+                                            <a href="https://github.com/RideQuest/rideshare-backend" target="_blank"><b>Source Code <span class="icon fa-external-link"></span></b></a><br/>
+                                            <button id="show_less4">Show Less</button></span>
+                                            </p>
                                         </div>
-                                    </div>
+                                    <!-- </div> -->
                                 </section>
                                 <a href="#resume" class="jumplink pic">
-                                    <span class="arrow icon fa-chevron-right"><span>Get my resume</span></span>
+                                    <span class="arrow icon fa-chevron-right"><span> Get my resume</span></span>
                                 </a>
                             </article>
 
@@ -224,7 +252,7 @@
                                     </li>
                                 </ul>
                                 <a href="#social" class="jumplink pic">
-                                    <span class="arrow icon fa-chevron-right"><span>Connect with Me</span></span>
+                                    <span class="arrow icon fa-chevron-right"><span> Connect with Me</span></span>
                                 </a>
                             </article>
 
