@@ -242,7 +242,8 @@
 
 })(jQuery);
 
-// ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+// Manage work
 $("#clickme").click(function(){
     $(".more_info").show();
     $("#clickme").hide();
@@ -283,6 +284,7 @@ $("#show_less4").click(function(){
 	$("#show_less4").hide();
 });
 
+// Rotator
 (function($){
     $.fn.extend({ 
         rotaterator: function(options) {

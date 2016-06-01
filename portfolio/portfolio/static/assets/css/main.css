@@ -1089,7 +1089,7 @@
 
 	#main {
 		position: relative;
-		overflow: auto;
+		overflow: inherit;
 	}
 
 	.panel {
