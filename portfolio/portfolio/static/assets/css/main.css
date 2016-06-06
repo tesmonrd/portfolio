@@ -1334,6 +1334,26 @@
 							border-bottom-width: 0.5em;
 						}
 
+		#bio_nav {
+			display: inline-block;
+			text-align: center;
+			width: 100%;
+
+		}
+		#bio_nav li{
+			float: left;
+			margin: 2% 4% 4% 4%;
+		}
+		#bio_nav a:hover {
+			color: #FF5600;
+			transition-delay: 1s; /* delays for 1 second */
+            -webkit-transition: all 500ms ease;
+            -moz-transition: all 500ms ease;
+            -ms-transition: all 500ms ease;
+            -o-transition: all 500ms ease;
+            transition: all 500ms ease;
+		}
+
 		/* Panels */
 
 			#main {
@@ -1600,5 +1620,3 @@
 
 	}
 
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
